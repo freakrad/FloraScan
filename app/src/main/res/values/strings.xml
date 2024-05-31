@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FloraScan</string>
+    <string name="title_home">News</string>
+    <string name="title_dashboard">Scan</string>
+    <string name="title_notifications">Save</string>
+    <string name="camera_x">CameraX</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="analyze">Analyze</string>
+    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
+    <string name="result">Hasil Analisis</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="title">Title</string>
+    <string name="published_date">Published Date</string>
+    <string name="save_bookmark">Save Bookmark?</string>
+</resources>
