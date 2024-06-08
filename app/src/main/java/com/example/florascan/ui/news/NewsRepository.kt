@@ -1,6 +1,9 @@
 package com.example.florascan.ui.news
 
+<<<<<<< HEAD
 import android.util.Log
+=======
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import com.example.florascan.BuildConfig
@@ -58,6 +61,7 @@ class NewsRepository private constructor(
         return result
     }
 
+<<<<<<< HEAD
     fun getBookmarkedNews(): LiveData<List<NewsEntity>> {
         return newsDao.getBookmarkedNews()
     }
@@ -68,6 +72,8 @@ class NewsRepository private constructor(
         }
     }
 
+=======
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
     companion object {
         @Volatile
         private var instance: NewsRepository? = null

@@ -5,7 +5,11 @@ import androidx.room.*
 import com.example.florascan.ui.news.entity.NewsEntity
 
 @Dao
+<<<<<<< HEAD
 interface NewsDao {
+=======
+interface   NewsDao {
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
     @Query("SELECT * FROM news ORDER BY publishedAt DESC")
     fun getNews(): LiveData<List<NewsEntity>>
 

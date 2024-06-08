@@ -1,7 +1,10 @@
 package com.example.florascan.ui.news
 
 import android.os.Bundle
+<<<<<<< HEAD
 import android.util.Log
+=======
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,7 +22,15 @@ class NewsFragment : Fragment() {
     private var _binding: FragmentNewsBinding? = null
     private val binding get() = _binding
 
+<<<<<<< HEAD
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+=======
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
         _binding = FragmentNewsBinding.inflate(layoutInflater, container, false)
         return binding?.root
     }
@@ -33,6 +44,7 @@ class NewsFragment : Fragment() {
             factory
         }
 
+<<<<<<< HEAD
         val newsAdapter = NewsAdapter { news ->
             if (news.isBookmarked){
                 viewModel.deleteNews(news)
@@ -44,19 +56,41 @@ class NewsFragment : Fragment() {
 
 //        if (tabName == TAB_NEWS) {
             Log.d("NewsFragment", "running")
+=======
+        val newsAdapter = NewsAdapter()
+
+        binding?.rvNews?.apply {
+            layoutManager = LinearLayoutManager(context)
+            setHasFixedSize(true)
+            adapter = newsAdapter 
+        }
+
+        if (tabName == TAB_NEWS) {
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
             viewModel.getHeadlineNews().observe(viewLifecycleOwner) { result ->
                 if (result != null) {
                     when (result) {
                         is Result.Loading -> {
+<<<<<<< HEAD
                             Log.d("NewsFragment", "Loading")
                             binding?.progressBar?.visibility = View.VISIBLE
                         }
                         is Result.Success -> {
                             Log.d("NewsFragment", "Success")
+=======
+                            binding?.progressBar?.visibility = View.VISIBLE
+                        }
+
+                        is Result.Success -> {
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
                             binding?.progressBar?.visibility = View.GONE
                             val newsData = result.data
                             newsAdapter.submitList(newsData)
                         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
                         is Result.Error -> {
                             binding?.progressBar?.visibility = View.GONE
                             Toast.makeText(
@@ -68,6 +102,7 @@ class NewsFragment : Fragment() {
                     }
                 }
             }
+<<<<<<< HEAD
 //        } else if (tabName == TAB_BOOKMARK) {
 //            viewModel.getBookmarkedNews().observe(viewLifecycleOwner) { bookmarkedNews ->
 //                binding?.progressBar?.visibility = View.GONE
@@ -79,6 +114,8 @@ class NewsFragment : Fragment() {
             layoutManager = LinearLayoutManager(context)
             setHasFixedSize(true)
             adapter = newsAdapter
+=======
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
         }
     }
 
@@ -90,6 +127,10 @@ class NewsFragment : Fragment() {
     companion object {
         const val ARG_TAB = "tab_name"
         const val TAB_NEWS = "news"
+<<<<<<< HEAD
         const val TAB_BOOKMARK = "bookmark7"
+=======
+        const val TAB_BOOKMARK = "bookmark"
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
     }
 }

@@ -27,6 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription" />
 
+<<<<<<< HEAD
         <ImageView
             android:id="@+id/iv_bookmark"
             android:layout_width="wrap_content"
@@ -39,6 +40,8 @@
             app:layout_constraintStart_toStartOf="@id/img_poster"
             app:layout_constraintTop_toTopOf="@+id/img_poster" />
 
+=======
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
         <TextView
             android:id="@+id/tv_item_title"
             android:layout_width="0dp"

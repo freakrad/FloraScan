@@ -10,13 +10,22 @@
         android:id="@+id/rv_news"
         android:layout_width="0dp"
         android:layout_height="0dp"
+<<<<<<< HEAD
         android:clipToPadding="false"
         android:padding="16dp"
+=======
+        android:padding="16dp"
+        android:clipToPadding="false"
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+=======
+        app:layout_constraintTop_toTopOf="parent"
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
         tools:listitem="@layout/item_news">
 
     </androidx.recyclerview.widget.RecyclerView>
@@ -25,11 +34,15 @@
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:visibility="gone"
+=======
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+<<<<<<< HEAD
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -50,4 +63,6 @@
             android:text="Bookmark" />
 
     </com.google.android.material.tabs.TabLayout>
+=======
+>>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
 </androidx.constraintlayout.widget.ConstraintLayout>
