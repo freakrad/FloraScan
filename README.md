@@ -10,13 +10,12 @@
 | Fachrad Zauhar Awwal         | A009D4KY4002   | Mobile Development   | Universitas Gunadarma                               |
 | Muhammad Ibnu Fadhilah       | A009D4KY4510   | Mobile Development   | Universitas Gunadarma                               |
 
-## Wild NEST
+## FloraScan
 
 <p align="center">
   <img src="" alt="MockUp APP" style="width:100%;">
 </p>
 
-## FloraScan
 FloraScan is an innovative application designed to help farmers and growers identify plant diseases quickly and accurately. The application leverages machine learning and image recognition technology to provide instant diagnosis. In this mentoring session, I hope to get  the best machine learning model for image recognition and how to optimize it 
 for accuracy and efficiency.
 
