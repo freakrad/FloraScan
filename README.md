@@ -20,10 +20,7 @@ FloraScan is an innovative application designed to help farmers and growers iden
 for accuracy and efficiency.
 
 ## Demo Aplikasi
-<div align="center">
-  <p>link video</p>
-  <video src="" width="400" />
-</div>
+Her is the [demo](https://drive.google.com/drive/folders/13BaKm9-Y2SurrTxl2C3pTC7N9PcKMuon?usp=drive_link) of FloraScan App
 
 ## Download Link
 Her is the [link](https://drive.google.com/drive/folders/1Jpovd6zR2psuMLXiteY7jLb4fGgCft0G?usp=drive_link) of FloraScan App
