@@ -38,7 +38,7 @@ Her is the [link](https://drive.google.com/drive/folders/1Jpovd6zR2psuMLXiteY7jL
   - Figma
   - Android Studio
   - Kotlin
-  - Firebase
+  - Retrofit
   - Model tensorflow.js
 
 - **Cloud Computing:**
