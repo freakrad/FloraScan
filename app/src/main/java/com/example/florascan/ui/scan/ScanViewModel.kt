@@ -1,13 +1,15 @@
 package com.example.florascan.ui.scan
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.florascan.helper.ResponseMl
+import com.example.florascan.repository.UserRepository
+import com.example.florascan.result.Result
+import okhttp3.MultipartBody
 
-class ScanViewModel : ViewModel() {
+class ScanViewModel(private val userRepository: UserRepository) : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is Scan Fragment"
-    }
-    val text: LiveData<String> = _text
+    fun uploadImage(file: MultipartBody.Part): LiveData<Result<ResponseMl>> =
+        userRepository.uploadImage(file)
+
 }

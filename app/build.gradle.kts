@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("kotlin-kapt")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -17,8 +18,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
-        buildConfigField("String", "API_KEY", "\"db874e166f4c473e9132d19a45135274\"")
-
+        buildConfigField("String", "API_KEY", "\"d67779c9d3a9416a8565c6f3b8a94a18\"")
+        buildConfigField("String", "BASE_URL", "\"https://florascan-server-37eqej7ehq-et.a.run.app/\"")
     }
 
     buildTypes {
@@ -68,9 +69,17 @@ dependencies {
     //retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     //room
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0")
     implementation("androidx.room:room-runtime:2.5.0-alpha02")
     kapt("androidx.room:room-compiler:2.5.0-alpha02")
+    //Lottie
+    implementation("com.airbnb.android:lottie:5.0.3")
+    //datastore
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.1")
+    implementation("androidx.activity:activity-ktx:1.9.0")
 }

@@ -3,12 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
-<<<<<<< HEAD
     android:layout_height="match_parent">
-=======
-    android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
->>>>>>> 3d54716ebe7a44730cc6494df9f3f362dbb386c9
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
