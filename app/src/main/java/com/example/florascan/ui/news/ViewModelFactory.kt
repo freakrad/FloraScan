@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.florascan.di.Injection
+import com.example.florascan.di.InjectionUser
 
 class ViewModelFactory private constructor(private val newsRepository: NewsRepository) :
     ViewModelProvider.NewInstanceFactory() {

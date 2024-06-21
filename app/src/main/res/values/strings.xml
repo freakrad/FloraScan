@@ -14,4 +14,25 @@
     <string name="title">Title</string>
     <string name="published_date">Published Date</string>
     <string name="save_bookmark">Save Bookmark?</string>
+    <string name="author">Author</string>
+    <string name="inv_email">Email Invalid!</string>
+    <string name="min_pass">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">Signup</string>
+    <string name="name">Name</string>
+    <string name="success_register">Akun berhasil dibuat, silahkan Login dengan akun Anda!</string>
+    <string name="next">Lanjut</string>
+    <string name="success">Berhasil</string>
+    <string name="failed_register">Akun gagal dibuat</string>
+    <string name="ok">Ok</string>
+    <string name="success_login">Anda berhasil Login!</string>
+    <string name="failed_login">Anda gagal Login!</string>
+    <string name="title_welcome_page">Selamat datang di FloraScan!</string>
+    <string name="message_welcome_page">Scan, Identifikasi, dan dapatkan perawatan yang tepat untuk tanaman Anda!</string>
+    <string name="logout">Logout</string>
+    <string name="score">99.111</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="Setting">Setting</string>
 </resources>

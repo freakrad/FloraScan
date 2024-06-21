@@ -1,6 +1,5 @@
 package com.example.florascan.ui.news
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import com.example.florascan.BuildConfig
@@ -17,7 +16,7 @@ import retrofit2.Response
 class NewsRepository private constructor(
     private val apiService: ApiService,
     private val newsDao: NewsDao,
-    private val appExecutors: AppExecutors
+    private val appExecutors: AppExecutors,
 ) {
     private val result = MediatorLiveData<Result<List<NewsEntity>>>()
 
@@ -37,6 +36,7 @@ class NewsRepository private constructor(
                                 article.publishedAt,
                                 article.urlToImage,
                                 article.url,
+//                                article.author,
                                 isBookmarked
                             )
                             newsList.add(news)
@@ -61,6 +61,7 @@ class NewsRepository private constructor(
     fun getBookmarkedNews(): LiveData<List<NewsEntity>> {
         return newsDao.getBookmarkedNews()
     }
+
     fun setBookmarkedNews(news: NewsEntity, bookmarkState: Boolean) {
         appExecutors.diskIO.execute {
             news.isBookmarked = bookmarkState
@@ -74,7 +75,7 @@ class NewsRepository private constructor(
         fun getInstance(
             apiService: ApiService,
             newsDao: NewsDao,
-            appExecutors: AppExecutors
+            appExecutors: AppExecutors,
         ): NewsRepository =
             instance ?: synchronized(this) {
                 instance ?: NewsRepository(apiService, newsDao, appExecutors)
