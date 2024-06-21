@@ -13,7 +13,7 @@
 ## FloraScan
 
 <p align="center">
-  <img src="" alt="MockUp APP" style="width:100%;">
+  <img src="https://github.com/andrymldni/plantDisease/blob/main/assets/FloraScan.png" alt="MockUp APP" style="width:100%;">
 </p>
 
 FloraScan is an innovative application designed to help farmers and growers identify plant diseases quickly and accurately. The application leverages machine learning and image recognition technology to provide instant diagnosis. In this mentoring session, I hope to get  the best machine learning model for image recognition and how to optimize it 
